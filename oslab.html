@@ -1,0 +1,272 @@
+<!DOCYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="hi">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+form fieldset input[type="submit"]{
+background-color: #008dde;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: 280px;
+-webkit-appearance:none;
+}
+form fieldset input[type="reset"]{
+background-color: #008dde;
+border: none;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+color: #f4f4f4;
+cursor: pointer;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+height: 50px;
+text-transform: uppercase;
+width: 280px;
+-webkit-appearance:none;
+}
+
+body{background-color:#E9F0EE;}
+p {background-color:#E82038;color:white;padding:10px}
+h2 {padding:1px; color:red;}
+table{border:solid black; color:#0d0d0d;}
+tr{background-color:#98DE90;}
+#xyz{ background-color:#E9F0EE;position:absolute;top:10px;left:140px;}
+#xyz1{ background-color:#E9F0EE;position:absolute;top:50px;left:300px;}
+</style>
+<script Language="Javascript">
+function myfunction()
+{
+var i,m,x,k;
+var j,n,y,l;
+var count=0,count1=0,count2=0,count3=0;
+	
+	for(j=1;j<6;j++)
+	{	
+		var radios = document.getElementsByName('na'+j);
+		var radioSelected = false;
+		for(i=0;i<radios.length;i++)
+		{
+			var radio = radios[i];
+			if(radio.checked)
+			radioSelected = true;
+			count++;
+		}
+		if(!radioSelected)
+		{
+			alert("pls answer question no A"+j);
+			return(false);
+		}
+	}
+
+//Kumar gaurav rocks
+        for(m=1;m<6;m++)
+	{	
+		var radios = document.getElementsByName('nb'+m);
+		var radioSelected = false;
+		for(n=0;n<radios.length;n++)
+		{
+			var radio = radios[n];
+			if(radio.checked)
+			radioSelected = true;
+			count1++;
+		}
+		if(!radioSelected)
+		{
+			alert("pls answer question no B"+m);
+			return(false);
+		}
+	}
+
+
+
+		//alert("Thank you for your feedback,your feedback matter for us");
+}
+</script>
+</head>
+
+<body>
+<form action="feedback2.php" onsubmit="return myfunction()" method="post">
+<fieldset>
+<img src="IIITGLogo.png" height=120px width=135px/>
+<span style="font-family:hindi, &#39;Lohit Devanagari&#39;;">
+	    <h2>
+		<div id="xyz1" style="color:black; font-weight:bold; font-size:35px;" lang="hi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;भारतीय सूचना
+प्रौद्योगिकी संस्थान गुवाहाटी</div>
+	    </h2>
+		
+			<div id="xyz" style="color:blue; font-weight:bold; font-size:42px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indian Institute of Information Technology Guwahati</div>
+			</span>
+			<p>
+<STRONG>INSTRUCTIONS:<STRONG>
+</p>
+<p>Please respond to each statement carefully. Your independent and well-considered responses will contribute to the Institute's ongoing effort to improve the teaching-learning environment.
+</p>
+
+<p><STRONG> ABOUT THE LAB:</STRONG></p>
+
+<table border="4" cellpadding="8" cellspacing="4" width=100%>
+<tr>
+<th><center> Academic Year </center></th>
+<th><center> Semester </center></th>
+<th><center> Course No </center></th>
+<th><center> Course Title </center></th>
+<th colspan="2"><center> Credits </center></th>
+</tr>
+
+<tr>
+<td><center>2015-2016</center></td>
+<td><center>Third (July-November)</center></td>
+<td><center>CS231</center></td>
+<td><center>Operating Systems Lab</center></td>
+<td><center>L-T-P-C</center></td>
+<th><center>0-0-4-4</center></th>
+</tr>
+
+</table>
+</br>
+<table border="3" cellpadding="3" width=100%>
+<tr>
+<th colspan="2">A:	About the lab component</th>
+<th>Strongly Disagree(1)</th>
+<th>Disagree(2)</th>
+<th>Neutal(3)</th>
+<th>Agree(4)</th>
+<th>Strongly Agree(5)</th>
+</tr>
+
+<tr>
+<td><center>A1</center></td>
+<td><center> A detailed write-up on the lab component were provided<center></td>
+<td> <center><input type="radio" name="na1" value="1"/></center></td>
+<td> <center><input type="radio" name="na1" value="2"/></center></td>
+<td> <center><input type="radio" name="na1" value="3"/></center></td>
+<td> <center><input type="radio" name="na1" value="4"/></center></td>
+<td> <center><input type="radio" name="na1" value="5"/></center></td>
+</tr>
+
+<tr>
+<td><center>A2</center></td>
+<td><center> Lab assignments were useful and followed the class<center></td>
+<td><center> <input type="radio" name="na2" value="1"/><center></td>
+<td><center> <input type="radio" name="na2" value="2"/><center></td>
+<td><center> <input type="radio" name="na2" value="3"/><center></td>
+<td><center> <input type="radio" name="na2" value="4"/><center></td>
+<td><center> <input type="radio" name="na2" value="5"/><center></td>
+</tr>
+
+<tr>
+<td><center>A3</center></td>
+<td><center> Lab components were user-friendly <center></td>
+<td> <center><input type="radio" name="na3" value="1"/></center></td>
+<td> <center><input type="radio" name="na3" value="2"/></center></td>
+<td> <center><input type="radio" name="na3" value="3"/></center></td>
+<td> <center><input type="radio" name="na3" value="4"/></center></td>
+<td> <center><input type="radio" name="na3" value="5"/></center></td>
+</tr>
+
+<tr>
+<td><center>A4</center></td>
+<td><center> Lab components were working properly<center></td>
+<td> <center><input type="radio" name="na4" value="1"/></center></td>
+<td> <center><input type="radio" name="na4" value="2"/></center></td>
+<td> <center><input type="radio" name="na4" value="3"/></center></td>
+<td> <center><input type="radio" name="na4" value="4"/></center></td>
+<td> <center><input type="radio" name="na4" value="5"/></center></td>
+</tr>
+
+<tr>
+<td><center>A5</center></td>
+<td><center> Lab session helped in clafying basic concepts taught in class<center></td>
+<td> <center><input type="radio" name="na5" value="1"/></center></td>
+<td> <center><input type="radio" name="na5" value="2"/></center></td>
+<td> <center><input type="radio" name="na5" value="3"/></center></td>
+<td> <center><input type="radio" name="na5" value="4"/></center></td>
+<td> <center><input type="radio" name="na5" value="5"/></center></td>
+</tr>
+</table>
+
+</table>
+</br>
+<table border="3" cellpadding="3" width=100%>
+<tr>
+<th colspan="2">B:	About the lab tutor</th>
+<th rowspan="2">Strongly Disagree(1)</th>
+<th rowspan="2">Disagree(2)</th>
+<th rowspan="2">Neutal(3)</th>
+<th rowspan="2">Agree(4)</th>
+<th rowspan="2">Strongly Agree(5)</th>
+</tr>
+
+<tr><th colspan="2">Rohit Tripathi</th></tr>
+
+<tr>
+<td><center>B1</center></td>
+<td><center> Overall, tutor was excellent<center></td>
+<td> <center><input type="radio" name="nb1" value="1"/></center></td>
+<td> <center><input type="radio" name="nb1" value="2"/></center></td>
+<td> <center><input type="radio" name="nb1" value="3"/></center></td>
+<td> <center><input type="radio" name="nb1" value="4"/></center></td>
+<td> <center><input type="radio" name="nb1" value="5"/></center></td>
+</tr>
+
+<tr>
+<td><center>B2</center></td>
+<td><center> Lab tutor was well prepared for the class<center></td>
+<td><center> <input type="radio" name="nb2" value="1"/><center></td>
+<td><center> <input type="radio" name="nb2" value="2"/><center></td>
+<td><center> <input type="radio" name="nb2" value="3"/><center></td>
+<td><center> <input type="radio" name="nb2" value="4"/><center></td>
+<td><center> <input type="radio" name="nb2" value="5"/><center></td>
+</tr>
+
+<tr>
+<td><center>B3</center></td>
+<td><center> The lab tutor instructions were clear and understandable <center></td>
+<td> <center><input type="radio" name="nb3" value="1"/></center></td>
+<td> <center><input type="radio" name="nb3" value="2"/></center></td>
+<td> <center><input type="radio" name="nb3" value="3"/></center></td>
+<td> <center><input type="radio" name="nb3" value="4"/></center></td>
+<td> <center><input type="radio" name="nb3" value="5"/></center></td>
+</tr>
+
+<tr>
+<td><center>B4</center></td>
+<td><center> Evaluations of lab sessions were done regularly and academic advices were given<center></td>
+<td> <center><input type="radio" name="nb4" value="1"/></center></td>
+<td> <center><input type="radio" name="nb4" value="2"/></center></td>
+<td> <center><input type="radio" name="nb4" value="3"/></center></td>
+<td> <center><input type="radio" name="nb4" value="4"/></center></td>
+<td> <center><input type="radio" name="nb4" value="5"/></center></td>
+</tr>
+
+<tr>
+<td><center>B5</center></td>
+<td><center> Lab tutor helped in clafying technical concepts incolved in practical work<center></td>
+<td> <center><input type="radio" name="nb5" value="1"/></center></td>
+<td> <center><input type="radio" name="nb5" value="2"/></center></td>
+<td> <center><input type="radio" name="nb5" value="3"/></center></td>
+<td> <center><input type="radio" name="nb5" value="4"/></center></td>
+<td> <center><input type="radio" name="nb5" value="5"/></center></td>
+</tr>
+</table>
+</br>
+<h2>Please write your comments about the course below:<h2>
+<textarea name="comments"  rows="7" cols="180" placeholder="Enter your comments here...">
+</textarea>
+<input type="checkbox" name="check" value="CS-252">Please check the box, if done
+</br>
+<input type="submit" value= "Please submit">
+<input type="reset" value= "Reset">
+</fieldset></form>
+</body>
+</html>
